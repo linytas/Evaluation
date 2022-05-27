@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="text/javascript"
+      src="https://gist.github.com/jesperorb/6ca596217c8dfba237744966c2b5ab1e"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/fetch-jsonp/1.0.6/fetch-jsonp.min.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f53976e1aa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Seach Bar -->
+    <header class="search-bar">
+      <input class="search-bar__input" type="text" placeholder="Search..." />
+
+      <i class="fa-solid fa-magnifying-glass fa-xl" id="search-bar__icon"></i>
+
+      <div class="search-bar__results-display">
+        <div class="search-bar__results">
+          <p class="search-bar__results-result">Results:</p>
+          <p class="search-bar__results-count"></p>
+        </div>
+      </div>
+      <div class="search-bar__loading-animation">
+        <div class="search-bar__loading"></div>
+      </div>
+    </header>
+
+    <!-- Albums List -->
+    <section class="albums-list">
+      <h2 class="albums-list__h2">Search albums by artist's name</h2>
+    </section>
+
+    <template class="album-list-item-template">
+      <div class="album-list-item">
+        <img alt="" class="album-list-item-img" />
+        <div class="album-list-item-row">
+          <p class="album-list-item-name"></p>
+        </div>
+      </div>
+    </template>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
